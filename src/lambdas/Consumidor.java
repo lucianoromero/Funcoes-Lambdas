@@ -16,16 +16,16 @@ public class Consumidor {
 		Produto p3 = new Produto("Caderno", 19.34, 0.03);
 		Produto p4 = new Produto("Borracha", 7.80, 0.18);
 		Produto p5 = new Produto("Lapis", 4.39, 0.19);
-		
-		List<Produto> produtos = Arrays.asList(p1,p2,p3,p4,p5);
-		
+
+		List<Produto> produtos = Arrays.asList(p1, p2, p3, p4, p5);
+
 		produtos.forEach(imprimirNome);
-        /// Forma Manual 
+		/// Forma Manual
 		produtos.forEach(p -> System.out.println(p.preco));
-		
-		// Usando o toString 
+
+		// Usando o toString
 		produtos.forEach(System.out::println);
-		
+
 	}
 
 }
